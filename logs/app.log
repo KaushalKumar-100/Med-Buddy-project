@@ -1,0 +1,44 @@
+2026-06-30 13:28:02,009 | INFO | Dataset Loaded with shape: (1025, 14)
+2026-06-30 13:33:12,708 | INFO | Dataset Loaded with shape: (1025, 14)
+2026-06-30 13:33:12,744 | INFO | Train shape (869, 13), Test shape: (156, 13)
+2026-06-30 13:41:28,073 | INFO | Dataset Loaded with shape: (1025, 14)
+2026-06-30 13:41:28,102 | INFO | Train shape (869, 13), Test shape: (156, 13)
+2026-06-30 13:41:28,102 | ERROR | Training Script Failed: RandomForestClassifier.__init__() got an unexpected keyword argument 'bootstraps'. Did you mean 'bootstrap'?
+2026-06-30 13:49:21,444 | INFO | Dataset Loaded with shape: (1025, 14)
+2026-06-30 13:49:21,475 | INFO | Train shape (869, 13), Test shape: (156, 13)
+2026-06-30 13:49:21,476 | ERROR | Training Script Failed: RandomForestClassifier.__init__() got an unexpected keyword argument 'min_samples_splits'. Did you mean 'min_samples_split'?
+Traceback (most recent call last):
+  File "C:\Users\kaush\Desktop\SummerBreak\Med Buddy Project\Med-Buddy-project\Backend\training.py", line 82, in train_model
+    best_rf=RandomForestClassifier(
+                random_state=RANDOM_STATE,
+    ...<8 lines>...
+                n_estimators=737
+            )
+TypeError: RandomForestClassifier.__init__() got an unexpected keyword argument 'min_samples_splits'. Did you mean 'min_samples_split'?
+2026-06-30 13:49:51,649 | INFO | Dataset Loaded with shape: (1025, 14)
+2026-06-30 13:49:51,679 | INFO | Train shape (869, 13), Test shape: (156, 13)
+2026-06-30 13:49:53,247 | INFO | Model Training completed
+2026-06-30 13:49:53,531 | INFO | Train Accuracy: 0.8941 | Recall: 0.9431 | F1: 0.9000
+2026-06-30 13:49:53,531 | INFO | Test Accuracy: 0.8141 | Recall: 0.8966 | F1: 0.8432
+2026-06-30 13:49:53,539 | INFO | Train Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.94      0.84      0.89       430
+           1       0.86      0.94      0.90       439
+ 
+    accuracy                           0.89       869
+   macro avg       0.90      0.89      0.89       869
+weighted avg       0.90      0.89      0.89       869
+
+2026-06-30 13:49:53,547 | INFO | Test Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.71      0.77        69
+           1       0.80      0.90      0.84        87
+
+    accuracy                           0.81       156
+   macro avg       0.82      0.80      0.81       156
+weighted avg       0.82      0.81      0.81       156
+
+2026-06-30 13:49:53,737 | INFO | Model saved to :C:\Users\kaush\Desktop\SummerBreak\Med Buddy Project\Med-Buddy-project\Model\Heart_disease_prediction.joblib
+2026-06-30 13:49:53,738 | INFO | Training Scripts completed
